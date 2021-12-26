@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript test functions</title>
+    <meta charset="utf-8">
+    <script src="js/jquery.js"></script>
+    <script>
+
+      function greeting(name,area) {
+        document.write("Hello " + name,"<br>");
+        document.write("Welcome to " + area,"<br>");
+      }
+      greeting("Mr. Lee","Korea");
+      greeting("Ms. Park","USA");
+
+      var num = 300;
+      function fncTest(){
+        var num = 200;
+        document.write(num,"<br>");
+      }
+      fncTest();
+      document.write(num);
+
+      $(function(){
+        /*$(".btn1 a").mouseover(function(){
+          alert('Hello');
+        });
+        */
+        /*
+        $(".btn1 a").on("mouseover focus", function(){
+          alert('Hello');
+        });
+        */
+        $(".btn1 a").on("click", function(){
+          var ts = $(this);
+          $(".btn1").next("ul").filter(":visible").hide();
+          ts.parent().next().show();
+          return false
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p class="btn1"><a href="#">이벤트 대상1</a></p>
+    <ul style="display:none">
+      <li>리스트 1</li>
+      <li>리스트 2</li>
+      <li>리스트 3</li>
+    </ul>
+    <p class="btn1"><a href="#">이벤트 대상2</a></p>
+    <ul style="display:none">
+      <li>리스트 4</li>
+      <li>리스트 5</li>
+      <li>리스트 6</li>
+    </ul>
+  </body>
+</html>

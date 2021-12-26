@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web1 - JavaScript </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <input type="button" value="Night" onclick="
+      document.body.style.backgroundColor = 'black';
+      document.body.style.color = 'white';
+    ">
+    <input type="button" value="Day" onclick="
+      document.body.style.backgroundColor = 'white';
+      document.body.style.color = 'black';
+    ">
+    <input id= "night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value === 'night') {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        document.querySelector('#night_day').value = 'day';
+      } else {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+        document.querySelector('#night_day').value = 'night';
+      }
+    ">
+    <h1><a href="index.html"> WEB </a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html"> HTML</a></li>
+        <li><a href="2.html"> CSS</a></li>
+        <li><a href="3.html"> JavaScript</a></li>
+      </ol>
+      <div id="article">
+        <h2>JavaScript</h2>
+        <p>JavaScript often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification.[10] JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+      </div>
+    </div>
+  </body>
+</html>

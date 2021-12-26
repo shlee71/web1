@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html5 new input type</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form name=frm>
+      <p>
+      1. 원하는 숫자를 설정해 주세요 <br>
+      <input type=number max=10 min =1 step=2 value=1 name=num><br>
+      <p>
+      2. 원하는 구간을 설정해 주세요 <br>
+      <input type=range max=10 min =1 step=2 value=1 name=ran> <br>
+      <p>
+      3. 원하는 값을 입력해 주세요 <br>
+      <input type=search name=sch> <br>
+      <p>
+      4. 전화번호를 입력해 주세요 <br>
+      <input type=tel name=telno> <br>
+      <p>
+      5. 원하는 색상을 설정해 주세요 <br>
+      <input type=color name=color> <br>
+      <p>
+      <fieldset>
+        <legend>6. 질문에 알맞는 답을 선택해 주세요</legend>
+        <br>
+        1.이름  : <input type=text name=name><br>
+        2.연락처: <input type=text name=contact><br>
+        3.성별:
+          남 <input type=radio name=sex> 녀 <input type=radio name=sex>
+          <br>
+        4.관심영역:<br>
+          경제 <input type=checkbox name=interest>
+          정치 <input type=checkbox name=interest>
+          사회 <input type=checkbox name=interest>
+          문화 <input type=checkbox name=interest>
+      </fieldset>
+     <br><br>
+     <input type="submit">
+  </form>
+  </body>
+</html>

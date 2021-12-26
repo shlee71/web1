@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html5 newly added attribute</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form name=frm>
+      학  과 : <input type=text size=10 name=dept value=전산학과> <br>
+      이  름 : <input type=text size=10 name=name placeholder=이름은공백없이 autofocus required> <br>
+      연락처 : <input type=text size=10 name=contact placeholder=핸드번번호입력 required> <br><br>
+      선택과목<input type=text list="sub"><br><br>
+      <datalist id="sub">
+        <option value=sub1  label="전산학개론">
+        <option value=sub2  label="사회학개론">
+        <option value=sub3  label="행정학개론">
+      </datalist>
+      <p>
+      제  목 : <input type=text size=50 name=title> <br><br>
+      <textarea name=content cols=80 rows=10>
+      </textarea>
+      <br><br>
+      <input type="submit">
+  </form>
+  </body>
+</html>
